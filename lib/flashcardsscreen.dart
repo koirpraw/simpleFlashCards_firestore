@@ -74,9 +74,12 @@ class NotesStream extends StatelessWidget {
                 title: contentTitle, description: contentDescription);
             flashcardcontainers.add(flashcardcontainer);
           }
-          return ListView(
-            reverse: false,
-            children: flashcardcontainers,
+          return Center(
+            child: ListView(
+
+              reverse: false,
+              children: flashcardcontainers,
+            ),
           );
         });
   }
@@ -99,20 +102,12 @@ class _FlashCardContainerState extends State<FlashCardContainer> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(12.0),
-      child: Material(
-        color: Colors.transparent,
-        elevation: 6,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Container(
-          width: MediaQuery.of(context).size.width * 0.8,
-          height: MediaQuery.of(context).size.height*0.25,
-          decoration: BoxDecoration(
-            color: Color(0xFFEEEEEE),
-            borderRadius: BorderRadius.circular(12),
-          ),
+      padding: const EdgeInsets.all(16.0),
+      child: SizedBox(
+        height: 250,
+        width: 250,
+        child: Card(
+          elevation: 4,
           child: Padding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
             child: Column(

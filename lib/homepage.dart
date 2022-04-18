@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:quizard/altflashcardscreen.dart';
 import 'package:quizard/categoryScreen.dart';
 import 'package:quizard/flashcardsscreen.dart';
 
@@ -18,7 +19,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CategoryScreen(),
+      home: AltFlashCardScreen(),
+      // CategoryScreen(),
     );
   }
 }
