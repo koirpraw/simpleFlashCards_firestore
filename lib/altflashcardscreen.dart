@@ -12,6 +12,9 @@ class AltFlashCardScreen extends StatefulWidget {
 }
 
 class _AltFlashCardScreenState extends State<AltFlashCardScreen> {
+
+  late double Score = 0.5;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +33,22 @@ class _AltFlashCardScreenState extends State<AltFlashCardScreen> {
                   Text("1/20", style: TextStyle(fontSize: 32),)
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:  [
+                  Container(
+                    width: 200,
+                    child: LinearProgressIndicator(
+                      color: Colors.lightGreen,
+                      value: Score,
+                      backgroundColor: Colors.grey.shade100,
+                      minHeight: 30,
+                      semanticsValue: 0.5.toString(),
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(height: 8,),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.5,
                 width: MediaQuery.of(context).size.width * 0.85,
