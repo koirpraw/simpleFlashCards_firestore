@@ -20,6 +20,7 @@ dependencies:
   cloud_firestore: ^3.1.10
   firebase_auth: ^3.3.11
   flip_card: ^0.6.0
+  get: ^4.6.1
 
 dev_dependencies:
   flutter_test:

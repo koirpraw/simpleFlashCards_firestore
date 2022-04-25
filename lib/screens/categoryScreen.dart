@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:quizard/database.dart';
-import 'package:quizard/flashcardsscreen.dart';
+import 'package:quizard/screens/remote_flashcardScreen.dart';
 
 import 'addflashcardScreen.dart';
 
