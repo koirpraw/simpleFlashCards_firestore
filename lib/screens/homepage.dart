@@ -32,11 +32,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   Get.toNamed('/localfilesource');
                 }, child: Text("Local dart file list")),
             ElevatedButton(
-                onPressed: () {}, child: Text("Local: Json file")),
+                onPressed: () {
+                  Get.toNamed('/readjson');
+                }, child: Text("Read Json")),
+            ElevatedButton(
+                onPressed: () {
+                  Get.toNamed('/localjsonsource');
+                }, child: Text("Local: Json file")),
+            // ElevatedButton(
+            //     onPressed: () {
+            //       Get.toNamed('/tempjson');
+            //     }, child: Text("Temp: Json Card")),
             ElevatedButton(
                 onPressed: () {}, child: Text("Remote: Firebase Firestore")),
             ElevatedButton(
-                onPressed: () {}, child: Text("Remote: API call(API endpoints)"))
+                onPressed: () {}, child: Text("Remote: API call(API endpoints)")),
           ],
         ),
       ),

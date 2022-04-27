@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
+import 'package:quizard/screens/json_flashcardScreen.dart';
 import 'package:quizard/screens/local_flashcardScreen.dart';
+import 'package:quizard/screens/readJson.dart';
+import 'package:quizard/screens/temp_json_cards.dart';
 import 'screens/homepage.dart';
 
 void main() async{
@@ -21,8 +24,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home:  MyHomePage(),
+      // MyJsonApp(),
+
       getPages: [
-        GetPage(name: '/localfilesource', page: ()=>LocalFileFlashCardScreen())
+        GetPage(name: '/localfilesource', page: ()=>LocalFileFlashCardScreen()),
+        GetPage(name: '/readjson', page: ()=>ReadJson()),
+        GetPage(name: '/localjsonsource', page: ()=>LocalJsonFlashCardScreen()),
+        GetPage(name: '/tempjson', page: ()=>TempJsonCards())
       ],
     );
   }

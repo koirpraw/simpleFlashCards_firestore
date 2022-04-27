@@ -1,0 +1,32 @@
+{
+    "flashcards": [
+      {
+        "title": "Golden Doodle",
+        "description": "Mix breed dog, golden retreiver and poodle"
+      },
+      {
+        "title": "Chiwawa",
+        "description": "Tiny breed dog , popular between celebrity"
+      },
+      {
+        "title": "Title 3",
+        "description": "Description 3"
+      },
+      {
+        "title": "Title 4",
+        "description": "Description 4"
+      },
+      {
+        "title": "Title 5",
+        "description": "Description 5"
+      },
+      {
+        "title": "Title 6",
+        "description": "Description 6"
+      },
+      {
+        "title": "Title 7",
+        "description": "Description 7"
+      }
+    ]
+  }

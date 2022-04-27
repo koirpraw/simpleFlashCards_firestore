@@ -1,0 +1,25 @@
+{
+    "items": [
+        {
+            "fruit": "Banana",
+            "color": "Yellow"
+        },
+        {
+            "fruit": "apple",
+            "color": "red"
+        },
+        {
+            "fruit": "blackberry",
+            "color": "black"
+        },
+        {
+            "fruit": "orange",
+            "color": "orange"
+        },
+        {
+            "fruit": "blueberry",
+            "color": "blue"
+        }
+        
+    ]
+}
